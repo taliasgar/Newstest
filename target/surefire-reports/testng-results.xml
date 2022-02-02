@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-20T18:53:07 IST" name="AspireChallenge" finished-at="2022-01-20T18:55:10 IST" duration-ms="122342">
+    <groups>
+      <group name="prerequisites">
+        <method signature="aspire_01_login.login()[pri:0, instance:codeChallenge.aspire_01_login@20ce78ec]" name="login" class="codeChallenge.aspire_01_login"/>
+      </group> <!-- prerequisites -->
+    </groups>
+    <test started-at="2022-01-20T18:53:07 IST" name="Test" finished-at="2022-01-20T18:55:10 IST" duration-ms="122342">
+      <class name="codeChallenge.aspire_02_addProductAndManufacturingDetails">
+        <test-method signature="addAProduct()[pri:1, instance:codeChallenge.aspire_02_addProductAndManufacturingDetails@43195e57]" started-at="2022-01-20T18:53:23 IST" name="addAProduct" depends-on-groups="prerequisites" finished-at="2022-01-20T18:54:24 IST" duration-ms="61104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAProduct -->
+        <test-method signature="addManufacturingOrder()[pri:2, instance:codeChallenge.aspire_02_addProductAndManufacturingDetails@43195e57]" started-at="2022-01-20T18:54:24 IST" name="addManufacturingOrder" depends-on-groups="prerequisites" finished-at="2022-01-20T18:55:06 IST" depends-on-methods="codeChallenge.aspire_02_addProductAndManufacturingDetails.addAProduct" duration-ms="42130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addManufacturingOrder -->
+      </class> <!-- codeChallenge.aspire_02_addProductAndManufacturingDetails -->
+      <class name="codeChallenge.aspire_01_login">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:codeChallenge.aspire_01_login@20ce78ec]" started-at="2022-01-20T18:53:07 IST" name="launchBrowser" finished-at="2022-01-20T18:53:13 IST" duration-ms="5449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="login()[pri:0, instance:codeChallenge.aspire_01_login@20ce78ec]" started-at="2022-01-20T18:53:13 IST" name="login" finished-at="2022-01-20T18:53:23 IST" duration-ms="9644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:codeChallenge.aspire_01_login@20ce78ec]" started-at="2022-01-20T18:55:09 IST" name="flush" finished-at="2022-01-20T18:55:10 IST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- codeChallenge.aspire_01_login -->
+      <class name="codeChallenge.aspire_03_logout">
+        <test-method signature="logout()[pri:3, instance:codeChallenge.aspire_03_logout@333291e3]" started-at="2022-01-20T18:55:06 IST" name="logout" depends-on-groups="prerequisites" finished-at="2022-01-20T18:55:09 IST" duration-ms="3415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- codeChallenge.aspire_03_logout -->
+    </test> <!-- Test -->
+  </suite> <!-- AspireChallenge -->
+</testng-results>
